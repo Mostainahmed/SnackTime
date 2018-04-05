@@ -22,21 +22,21 @@ public class LoginActivity extends AppCompatActivity {
         UserPassword = findViewById(R.id.user_pass);
         SignBtn = findViewById(R.id.signin_btn);
 
-//        SignBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                //performLogin();
-//                Intent i=new Intent(LoginActivity.this,MainActivity.class);
-//                startActivity(i);
-//            }
-//        });
+        SignBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //performLogin();
+                Intent i=new Intent(LoginActivity.this,MainActivity.class);
+                startActivity(i);
+            }
+        });
 
     }
-    public void onLogin(View view){
-        String username = UserName.getText().toString();
-        String password = UserPassword.getText().toString();
-        String type = "login";
-        VerificationChecker verificationChecker = new VerificationChecker(this);
-        verificationChecker.execute(type, username, password);
-    }
+//    public void onLogin(View view){
+//        String username = UserName.getText().toString();
+//        String password = UserPassword.getText().toString();
+//        String type = "login";
+//        VerificationChecker verificationChecker = new VerificationChecker(this);
+//        verificationChecker.execute(type, username, password);
+//    }
 }

@@ -31,7 +31,7 @@ public class VerificationChecker extends AsyncTask<String,Void,String> {
     @Override
     protected String doInBackground(String... params) {
         String type = params[0];
-        String login_url = "http://localhost/happysnacks/login.php";
+        String login_url = "https://happy-snacks.000webhostapp.com/login.php";
         if(type.equals("login")){
             try {
                 String user_name = params[0];

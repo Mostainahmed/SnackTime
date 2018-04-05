@@ -15,4 +15,10 @@
     <string name="sign_in">Sign in</string>
     <string name="password">Password</string>
     <string name="user_name">User Name</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="menu_fragment">Please Select one item</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

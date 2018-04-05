@@ -40,8 +40,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:background="@drawable/user_button"
-        android:text="@string/sign_in"
-        android:elevation="5dp"/>
+        android:text="@string/sign_in" />
 
     <TextView
         android:id="@+id/register_txt"
