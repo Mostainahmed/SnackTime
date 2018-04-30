@@ -1,24 +1,117 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.w3.snacktime.MenuFragment">
+    tools:context="com.w3.snacktime.menu.MenuFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/textViewCommand"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:textAlignment="center"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
         android:gravity="center_horizontal"
         android:text="@string/menu_fragment"
+        android:textColor="@color/colorSecondaryText"
         android:textSize="20sp"
-        android:textStyle="bold|italic" />
+        android:textStyle="bold"
+        android:typeface="normal" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/menuRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="470dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewCommand" />
 
-        android:layout_marginTop="35dp" />
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="end"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/ripple_effect"
+        android:elevation="10dp"
+        android:text="SUBMIT"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryText"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:visibility="gone" />
 
-</FrameLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="true" />
+    <ImageView
+        android:id="@+id/noOrderImageView"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/sorry"
+       android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_above="@id/noOrderImageView"
+        android:layout_marginBottom="38dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:id="@+id/textViewNoItem"
+        android:layout_marginLeft="16dp"
+        android:textAlignment="center"
+        android:layout_marginRight="16dp" />
+
+    <Button
+        android:id="@+id/goHome"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end"
+        android:layout_marginBottom="33dp"
+        android:layout_marginEnd="34dp"
+        android:layout_toStartOf="@+id/reload"
+        android:background="@drawable/user_button"
+        android:elevation="10dp"
+        android:text="HOME"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryText"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/reload"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_alignBaseline="@+id/goHome"
+        android:layout_alignBottom="@+id/goHome"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/reload_button"
+        android:elevation="10dp"
+        android:text="RELOAD"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryText"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+</RelativeLayout>

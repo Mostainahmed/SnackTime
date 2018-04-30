@@ -7,18 +7,30 @@
     <string name="action_settings">Settings</string>
     <string name="notifications">Notifications</string>
     <string name="admin">Admin</string>
-    <string name="logout">Sign Out</string>
+    <string name="logout" textColor="#f40b0b"> Sign Out</string>
     <string name="home">Home</string>
     <string name="title_activity_login">LoginActivity</string>
-    <string name="hello_login_fragment">Hello Login Fragment</string>
+    <string name="hello_login_fragment">Please Login to continue</string>
     <string name="new_user_register_now">New User?  Register Now</string>
     <string name="sign_in">Sign in</string>
     <string name="password">Password</string>
     <string name="user_name">User Name</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="menu_fragment">Please Select one item</string>
+    <string name="menu_fragment">Please Select an item</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pref_file">Hello Shared Preference</string>
+    <string name="pref_login_status">Hello Login Status</string>
+    <string name="pref_user_name">Hello User Name</string>
+    <string name="title_activity_time_up">TimeUpActivity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="action_example">Example action</string>
+    <string name="order">Order Snacks</string>
+
 </resources>

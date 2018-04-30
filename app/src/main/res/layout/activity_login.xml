@@ -3,52 +3,120 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context="com.w3.snacktime.LoginActivity">
+    android:paddingLeft="28dp"
+    android:paddingRight="28dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#FFFFFF"
+    tools:context="com.w3.snacktime.activity.LoginActivity">
 
     <!-- TODO: Update login fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:background="@drawable/wthree"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:text="@string/hello_login_fragment"
-        android:textAppearance="?android:textAppearanceLarge"
-        android:textStyle="bold" />
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="20dp"
+        android:paddingStart="6dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="9dp"
+        android:paddingTop="4dp"/>
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="45dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_profile"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/user_name"
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimaryLight"
+            android:textSize="24sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryLight"/>
 
     <EditText
-        android:id="@+id/user_name"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="135dp"
-        android:hint="@string/user_name" />
-
-    <EditText
+        android:ems="10"
+        android:textSize="24sp"
         android:id="@+id/user_pass"
-        android:layout_width="250dp"
+        android:drawablePadding="12dp"
+        android:padding="8dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_lock"
+        android:background="@android:color/transparent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorPrimaryLight"
+        android:textColor="@color/colorPrimaryDark"
         android:hint="@string/password"
         android:inputType="textPassword" />
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryLight"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="20dp"
+            android:text="Remember Me"
+            android:id="@+id/rememberCheckbox"
+            android:padding="8dp"/>
     <Button
         android:id="@+id/signin_btn"
-        android:layout_width="100dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:background="@drawable/user_button"
-        android:text="@string/sign_in" />
-
-    <TextView
-        android:id="@+id/register_txt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
-        android:text="@string/new_user_register_now" />
+        android:padding="8dp"
+        android:elevation="15dp"
+        android:onClick="onLogin"
+        android:text="@string/sign_in"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryText"/>
+        <!--<com.spark.submitbutton.SubmitButton-->
+            <!--android:id="@+id/signin_btn"-->
+            <!--android:onClick="onLogin"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:padding="16dp"-->
+            <!--android:text="Submit"-->
+            <!--android:textColor="#f26c78"-->
+            <!--app:sub_btn_background="@color/white"-->
+            <!--app:sub_btn_duration="3000"-->
+            <!--app:sub_btn_line_color="#9d4adf"-->
+            <!--app:sub_btn_ripple_color="#37d261"-->
+            <!--app:sub_btn_tick_color="@color/white" />-->
+    </LinearLayout>
+</ScrollView>
 
 
 </LinearLayout>
