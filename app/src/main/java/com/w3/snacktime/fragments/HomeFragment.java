@@ -30,8 +30,8 @@ public class HomeFragment extends Fragment {
 
     ImageView imageView;
     TextView textView;
-    int lower_time_limit = 10;
-    int upper_time_limit = 20;
+    int lower_time_limit = 1;
+    int upper_time_limit = 8;
     int current_hour;
     Button buttonGo;
 

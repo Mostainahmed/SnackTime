@@ -31,7 +31,7 @@ public class AdminFragment extends Fragment {
                              Bundle savedInstanceState) {
         View v=inflater.inflate(R.layout.fragment_admin, container, false);
         mWebView = (WebView) v.findViewById(R.id.webView);
-        mWebView.loadUrl("http://lunch.w3engineers.com/web/");
+        mWebView.loadUrl("http://www.pranon.com/");
 
         // Enable Javascript
         WebSettings webSettings = mWebView.getSettings();

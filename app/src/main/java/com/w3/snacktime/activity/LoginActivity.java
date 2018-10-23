@@ -76,8 +76,7 @@ public class LoginActivity extends AppCompatActivity {
                     editor.putBoolean("status", true);
                     editor.commit();
                     editor.apply();
-//                String username = un;
-//                String password = pw;
+
                     String type = "login";
                     VerificationChecker verificationChecker = new VerificationChecker(this);
                     verificationChecker.execute(type, un, pw);

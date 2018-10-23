@@ -20,9 +20,7 @@ import java.lang.annotation.Target;
 
 import static android.app.NotificationManager.IMPORTANCE_DEFAULT;
 
-/**
- * Created by W3E16 on 17-Apr-18.
- */
+
 
 public class AlarmReceiver extends BroadcastReceiver {
 

@@ -38,7 +38,7 @@ public class NotificationService extends Service {
     public void onCreate() {
         super.onCreate();
         mTimer = new Timer();
-        mTimer.schedule(timerTask, 2000, 10*1000);
+        mTimer.schedule(timerTask, 2000, 1800*1000);
     }
 
     @Override
@@ -56,8 +56,8 @@ public class NotificationService extends Service {
     TimerTask timerTask = new TimerTask() {
         @Override
         public void run() {
-            lower_time_limit = 10;
-            upper_time_limit = 17;
+            lower_time_limit = 1;
+            upper_time_limit = 8;
 
             confirm = getSharedPreferences("confirmation",MODE_PRIVATE);
 
@@ -135,7 +135,7 @@ public class NotificationService extends Service {
 
             NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
             notificationManager.notify(1, notification);
-            startForeground((int)System.currentTimeMillis(), notification);
+            //startForeground((int)System.currentTimeMillis(), notification);
         }
 
 }

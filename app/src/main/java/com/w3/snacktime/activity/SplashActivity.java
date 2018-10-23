@@ -40,14 +40,41 @@ public class SplashActivity extends AppCompatActivity {
         splashText = findViewById(R.id.splashText);
         Typeface CustomFont = Typeface.createFromAsset(getAssets(), "fonts/PatchyRobots.ttf");
         splashText.setTypeface(CustomFont);
-        CircularImageView imageView = findViewById(R.id.splashImage);
+        //CircularImageView imageView = findViewById(R.id.splashImage);
+
         imageViewPro = findViewById(R.id.progressBar);
+
+
+
+
+
+
         Animation animation = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade);
         Animation animation1 = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.uptodown);
+
+
+
+
+
+
         Animation animation2 = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.downtoup);
         imageViewPro.startAnimation(animation2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         splashText.startAnimation(animation1);
-        imageView.startAnimation(animation);
+        //imageView.startAnimation(animation);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

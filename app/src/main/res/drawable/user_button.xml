@@ -9,9 +9,5 @@
         android:bottom="2dp"
         android:left="2dp" />
     <solid android:color="@color/colorPrimaryDark" />
-    <!---
-    <gradient
-        android:startColor="#e6ac0e"
-        android:endColor="#edd5c4"
-        android:angle="90"/>  -->
+
 </shape>

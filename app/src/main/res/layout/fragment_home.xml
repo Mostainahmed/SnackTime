@@ -46,7 +46,7 @@
         android:layout_marginLeft="18dp"
         android:layout_marginRight="18dp"
         android:layout_marginTop="55dp"
-        android:background="@drawable/ripple_effect"
+        android:background="@drawable/user_button"
         android:text="GO"
         android:textColor="@color/colorPrimaryText"
         android:textSize="18sp"
