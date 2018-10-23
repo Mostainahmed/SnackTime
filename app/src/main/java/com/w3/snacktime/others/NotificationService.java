@@ -56,8 +56,8 @@ public class NotificationService extends Service {
     TimerTask timerTask = new TimerTask() {
         @Override
         public void run() {
-            lower_time_limit = 1;
-            upper_time_limit = 8;
+            lower_time_limit = 10;
+            upper_time_limit = 12;
 
             confirm = getSharedPreferences("confirmation",MODE_PRIVATE);
 
