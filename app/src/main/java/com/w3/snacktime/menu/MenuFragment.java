@@ -69,8 +69,8 @@ public class MenuFragment extends Fragment implements MenuItemListener {
     private Dialog mDialog;
     private Button mButtonYes, mButtonNo;
     private static int SPLASH_TIME_OUT = 2750;
-    private int lower_time_limit = 1;
-    private int upper_time_limit = 8;
+    private int lower_time_limit = 10;
+    private int upper_time_limit = 12;
     private int current_hour;
     public TextView textView,textViewNoItem;
     public ImageView imageViewError;
